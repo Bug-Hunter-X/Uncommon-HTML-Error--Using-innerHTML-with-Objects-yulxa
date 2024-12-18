@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    let myObject = { name: "John Doe", age: 30 };
+    // Correct approach 1: Stringify the object
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject);
+
+    // Correct approach 2: Access object properties
+    document.getElementById("myDiv").innerHTML = "Name: " + myObject.name + ", Age: " + myObject.age; 
+  </script>
+</body>
+</html>
